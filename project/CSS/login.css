@@ -1,0 +1,177 @@
+
+h1{
+    text-align: center;
+}
+.section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/IMAGE/backrowund.jpg);
+    background-size: cover;
+    color: #efecec;
+}
+.login{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: rgb(226, 235, 235);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.login h1{
+    font-size: 36px;
+    text-align: center;
+}
+.login .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    color:rgb(250, 248, 248);
+    
+}
+.input-box input::placeholder{
+    color:rgb(252, 250, 250);
+    padding: 20px;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    transform: translatey(-50%);
+    font-size: 20px;
+}
+.login .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color:white;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.login .btn{
+    width: 400px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.login .Register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+.login .Register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background: #020202;
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    color: #efecec;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a{
+    text-decoration: none;
+    color: #f9f6f6;
+}
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.social a:hover i{
+    color: aqua;
+}
+.footer-bottun{
+    background: #020202;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottun span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

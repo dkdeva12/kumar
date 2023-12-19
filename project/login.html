@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+
+    <section>
+        <h1 style="font-size: 55px;">AARA PICTURES</h1>
+<div class="login">
+    
+    <form id="loginForm" action="your_backend_login_endpoint" method="post" action="/index.html">
+
+        <h1>LOGIN</h1>
+
+        <div class="input-box">
+            <input type="text" id="username" name="username" placeholder="username" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="checkbox" id="rememberMe"> Remember me</label>
+            <a href="#">forgot password</a>
+        </div>
+
+        <button type="button" class="btn" onclick="validateForm()">LOGIN</button>
+
+        <div class="Register-link">
+            <p>Don't have an account?
+                <a href="/register.html">Register</a>
+            </p>
+        </div>
+</div>
+    </section>
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var rememberMe = document.getElementById('rememberMe').checked;
+
+            // Perform your validation here
+            if (username === "" || password === "") {
+                alert("Please enter both username and password");
+                return;
+            }
+
+            // If validation passes, you can proceed with form submission or other actions
+            // For example, you can use AJAX to send data to the server
+            // Here, I'm just logging the values to the console
+            alert("Username:", username);
+            alert("Password:", password);
+            alert("Remember Me:", rememberMe);
+
+            // Uncomment the following line if you want to submit the form
+            // document.getElementById('loginForm').submit();
+        }
+    </script>
+
+
+</body>
+</html>
